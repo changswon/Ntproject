@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402508633344",
+    "project_id": "ntproject-19b17",
+    "storage_bucket": "ntproject-19b17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402508633344:android:76f57c21939fa53e754fe5",
+        "android_client_info": {
+          "package_name": "com.NtProject.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmGS2rfoCDKW_w_3FznYM_J2ML8NVS5hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

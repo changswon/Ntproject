@@ -5,8 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import DeviceInfo from 'react-native-device-info';
 
-const HomeScreen = () => {
-  const navigation = useNavigation();
+const HomeScreen = ({ navigation }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -19,16 +18,17 @@ const HomeScreen = () => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ phoneNumber: collectedPhoneNumber }),
+          body: JSON.stringify({ phoneNumber: collectedPhoneNumber  }),
         });
 
         const result = await response.json();
 
-        const isMember = result.state;
-        console.log(result);
+        const isMember = result.status;
+
         console.log(isMember);
 
         if (isMember) {
+          console.log("성공!!!");
           setIsLoading(false);
         } else {
           // 회원이 아니면 처리 (예: 알림 메시지 등)

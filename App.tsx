@@ -4,6 +4,7 @@ import WebView from 'react-native-webview';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import DeviceInfo from 'react-native-device-info';
+import styles from './styles/styles';
 
 const HomeScreen = ({ navigation }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,8 +61,9 @@ const HomeScreen = ({ navigation }) => {
 
 const RegistrationScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Registration Page - 회원 등록이 필요합니다.</Text>
+    <View style={styles.container}>
+          <Text style={styles.text}>회원 등록이 필요합니다.</Text>
+          <Text style={styles.additionalText}>문의전화 010-9873-1412</Text>
       {/* 여기에 회원 등록 관련 UI 또는 로직을 추가하세요 */}
     </View>
   );

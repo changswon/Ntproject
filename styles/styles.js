@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   additionalText: {
-    fontSize: 15,
+    fontSize: 11,
   }
 });
 
